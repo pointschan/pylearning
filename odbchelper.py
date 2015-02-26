@@ -1,3 +1,5 @@
+__author__ = 'Charles'
+
 from collections import OrderedDict
 
 def buildConnectionString(params):
@@ -29,4 +31,4 @@ if __name__ == "__main__":
 
 
 
-print buildConnectionStringx(server="xxmpilgrim",database="xmaster",uid="xsa",pwd="xsecret")
+print buildConnectionStringx(server="xmpilgrim",database="xmaster",uid="xsa",pwd="xsecret")

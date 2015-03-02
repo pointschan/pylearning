@@ -25,6 +25,7 @@ class testBuildConnectionStringFunctions(unittest.TestCase):
         Returns string."""
         print self.params
         dbConnectionString = buildConnectionString(self.params)
+        print dbConnectionString
         self.assertEqual(dbConnectionString, "server=mpilgrim;database=master;uid=sa;pwd=secret")
 
 
@@ -32,7 +33,7 @@ class testBuildConnectionStringFunctions(unittest.TestCase):
         print self.paramsx
         dbConnectionStringx = buildConnectionString(self.paramsx)
         print dbConnectionStringx
-        self.assertEqual(dbConnectionStringx, "server=mpilgrim;database=master;uid=sa;pwd=secret")
+        self.assertNotEqual(dbConnectionStringx, "server=mpilgrim;database=master;uid=sa;pwd=secret")
 
 print __name__
 if __name__ == "__main__":

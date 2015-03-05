@@ -52,6 +52,8 @@ if __name__ == "__main__":
 
 
 info(odbchelper)
+li = []
+info(li)
 
 
 

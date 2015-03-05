@@ -3,13 +3,15 @@ __author__ = 'Charles'
 from collections import OrderedDict
 
 def buildConnectionString(params):
-        """Build a connection string from a dictionaryof parameters.
+        """Build a connection string from a dictionary of parameters.
 
         Returns string."""
         print params
         return ";".join(["%s=%s" % (a, b) for a, b in params.items()])
 
 def buildConnectionStringx(**paramx):
+        """Build a connection string from a dictionary of parameters.
+        Returns string."""
         return ";".join(["%s=%s" % (k, v) for k, v in paramx.items()])
 
 print __name__

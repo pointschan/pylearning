@@ -16,18 +16,16 @@ def buildConnectionStringx(**paramx):
 
 print __name__
 if __name__ == "__main__":
-        myParams = OrderedDict([("server","mpilgrim"), \
-                    ("database","master"), \
-                    ("uid","sa"), \
-                    ("pwd","secret") \
-                    ])
+        myParams = OrderedDict([("server","mpilgrim"),
+                    ("database","master"),
+                    ("uid","sa"),
+                    ("pwd","secret")])
         print buildConnectionString(myParams)
 
-        myParams2 = {"pwd":"secret", \
-                    "uid":"sa", \
-                    "database":"master", \
-                    "server":"mpilgrim" \
-                    }
+        myParams2 = {"pwd":"secret",
+                    "uid":"sa",
+                    "database":"master",
+                    "server":"mpilgrim"}
         print buildConnectionString(myParams2)
 
 
